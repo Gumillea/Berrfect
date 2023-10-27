@@ -1,0 +1,5 @@
+// 1.19.2	2023-10-26T20:34:37.2983258	Tags for minecraft:item
+03b92343fdf07e7727435dae38fb9b3e7c3d50fc data/blueprint/tags/items/chicken_food.json
+9f8672c3a126ae8f68bb45b18027b733dd16efa3 data/forge/tags/items/fruits/blueberries.json
+a702678f4f786b104795d7b60cbe67d195a5e4eb data/forge/tags/items/jam.json
+03b92343fdf07e7727435dae38fb9b3e7c3d50fc data/forge/tags/items/seeds.json

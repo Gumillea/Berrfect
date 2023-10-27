@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:nightshade_berries"
+        },
+        {
+          "type": "berrfect:config",
+          "value": "enable_byg_modification"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "byg:nightshade_berries"
+    }
+  ],
+  "result": {
+    "item": "berrfect:nightshade_berry_pips"
+  }
+}

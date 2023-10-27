@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:fruits/blueberries"
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:fruits/blueberries"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "berrfect:blueberry_jam_bottle"
+  }
+}

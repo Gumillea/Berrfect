@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:crimson_berries"
+        },
+        {
+          "type": "berrfect:config",
+          "value": "enable_byg_modification"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "byg:crimson_berries"
+    }
+  ],
+  "result": {
+    "item": "berrfect:crimson_berry_pips"
+  }
+}

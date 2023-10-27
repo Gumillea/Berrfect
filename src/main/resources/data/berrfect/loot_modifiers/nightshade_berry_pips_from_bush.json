@@ -1,0 +1,10 @@
+{
+  "type": "berrfect:add_pips_item",
+  "item": "berrfect:nightshade_berry_pips",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "byg:nightshade_berry_bush"
+    }
+  ]
+}

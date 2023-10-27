@@ -1,0 +1,10 @@
+{
+  "type": "berrfect:add_pips_item",
+  "item": "berrfect:crimson_berry_pips",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "byg:crimson_berry_bush"
+    }
+  ]
+}

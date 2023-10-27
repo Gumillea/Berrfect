@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "ars_nouveau:source_berry"
+        },
+        {
+          "type": "berrfect:config",
+          "value": "enable_ars_nouveau_modification"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "ars_nouveau:source_berry"
+    }
+  ],
+  "result": {
+    "item": "berrfect:sourceberry_pips"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "berrfect:add_pips_item",
+  "item": "berrfect:sourceberry_pips",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "ars_nouveau:sourceberry_bush"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:blueberries"
+        },
+        {
+          "type": "berrfect:config",
+          "value": "enable_byg_modification"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "byg:blueberries"
+    }
+  ],
+  "result": {
+    "item": "berrfect:blueberry_pips"
+  }
+}

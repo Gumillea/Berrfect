@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "byg:crimson_berries"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "byg:crimson_berries"
+    },
+    {
+      "item": "byg:embur_gel_ball"
+    },
+    {
+      "item": "byg:embur_gel_ball"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "berrfect:embur_pudding"
+  }
+}

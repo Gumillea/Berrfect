@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:fruits/blueberries"
+      }
+    }
+  ],
+  "pattern": [
+    "AA ",
+    "AA "
+  ],
+  "key": {
+    "A": {
+      "item": "berrfect:blueberry_jam_bottle"
+    }
+  },
+  "result": {
+    "item": "berrfect:blueberry_jam_block"
+  }
+}
