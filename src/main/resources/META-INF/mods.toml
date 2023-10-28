@@ -3,7 +3,7 @@ loaderVersion="[43,)"
 license="MIT"
 [[mods]]
 modId="berrfect"
-version="1.0.0"
+version="1.0.1"
 displayName="Berrfect"
 logoFile="icon.png"
 authors="Gumillea"

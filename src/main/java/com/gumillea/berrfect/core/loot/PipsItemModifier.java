@@ -7,6 +7,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -35,10 +36,10 @@ public class PipsItemModifier  extends LootModifier {
     @NotNull
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
 
-        if (ModList.get().isLoaded(ModCompat.AN) && Objects.requireNonNull(context.getParamOrNull(LootContextParams.BLOCK_STATE)).getBlock() == ModCompat.SOURCEBERRY_BUSH) {
-        generatedLoot.add(new ItemStack(item));
-        } else if (ModList.get().isLoaded("byg")) {
+        if (ModList.get().isLoaded(ModCompat.AN) || ModList.get().isLoaded("byg")) {
             generatedLoot.add(new ItemStack(item));
+        } else {
+            generatedLoot.remove(new ItemStack(item));
         }
 
         return generatedLoot;
