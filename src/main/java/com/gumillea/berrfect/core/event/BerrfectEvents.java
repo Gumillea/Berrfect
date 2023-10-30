@@ -34,6 +34,12 @@ public class BerrfectEvents {
             }
         }
 
+        if (ModList.get().isLoaded(ModCompat.UG) && (Common.AN_MODIFICATION.get())) {
+            if (stack.is(ModCompat.BLISTERBERRY) || stack.is(ModCompat.DROOPFRUIT)){
+                event.setUseItem(Event.Result.DENY);
+            }
+        }
+
     }
 
 

@@ -21,13 +21,13 @@ public class BerrfectItems {
     public static final ItemSubRegistryHelper HELPER = Berrfect.REGISTRY_HELPER.getItemSubHelper();
 
     public static final RegistryObject<Item> BLUEBERRY_PIPS = HELPER.createItem("blueberry_pips", () -> new BerrfectPipsItem(ModCompat.BLUEBERRIES_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
+    public static final RegistryObject<Item> BLISTERBERRY_PIPS = HELPER.createItem("blisterberry_pips", () -> new BerrfectPipsItem(ModCompat.BLISTERBERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
     public static final RegistryObject<Item> CRIMSON_BERRY_PIPS = HELPER.createItem("crimson_berry_pips", () -> new BerrfectPipsItem(ModCompat.CRIMSON_BERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
     public static final RegistryObject<Item> NIGHTSHADE_BERRY_PIPS = HELPER.createItem("nightshade_berry_pips", () -> new BerrfectPipsItem(ModCompat.NIGHTSHADE_BERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
-    public static final RegistryObject<Item> SOURCEBERRY_PIPS = HELPER.createItem("sourceberry_pips", () -> new BerrfectPipsItem(ModCompat.SOURCEBERRY_BUSH, new Item.Properties().tab(ModCompat.AN_ITEM)));
-
-    public static final RegistryObject<Item> BLUEBERRY_JAM_BOTTLE = HELPER.createItem("blueberry_jam_bottle", () -> new BerrfectDrinkItem(new Item.Properties().food(BerrfectFoods.BLUEBERRY_JAM_BOTTLE).stacksTo(16).craftRemainder(Items.GLASS_BOTTLE).tab(CreativeModeTab.TAB_FOOD)));
-    public static final RegistryObject<Item> BLUEBERRY_JAM_ROLL = HELPER.createItem("blueberry_jam_roll", () -> new BlueberryJamRollItem(new Item.Properties().food(BerrfectFoods.BLUEBERRY_JAM_ROLL).tab(CreativeModeTab.TAB_FOOD)));
-    public static final RegistryObject<Item> EMBUR_PUDDING = HELPER.createItem("embur_pudding", () -> new BowlFoodItem(new Item.Properties().food(BerrfectFoods.EMBUR_PUDDING).stacksTo(1).tab(CreativeModeTab.TAB_FOOD)));
+    public static final RegistryObject<Item> SOURCEBERRY_PIPS = HELPER.createItem("sourceberry_pips", () -> new BerrfectPipsItem(ModCompat.SOURCEBERRY_BUSH, new Item.Properties().tab(ModCompat.AN_PIPS)));
+    public static final RegistryObject<Item> BLUEBERRY_JAM_BOTTLE = HELPER.createItem("blueberry_jam_bottle", () -> new BerrfectDrinkItem(new Item.Properties().food(BerrfectFoods.BLUEBERRY_JAM_BOTTLE).stacksTo(16).craftRemainder(Items.GLASS_BOTTLE).tab(ModCompat.BYG_MISC)));
+    public static final RegistryObject<Item> BLUEBERRY_JAM_ROLL = HELPER.createItem("blueberry_jam_roll", () -> new BlueberryJamRollItem(new Item.Properties().food(BerrfectFoods.BLUEBERRY_JAM_ROLL).tab(ModCompat.BYG_MISC)));
+    public static final RegistryObject<Item> EMBUR_PUDDING = HELPER.createItem("embur_pudding", () -> new BowlFoodItem(new Item.Properties().food(BerrfectFoods.EMBUR_PUDDING).stacksTo(1).tab(ModCompat.BYG_MISC)));
 
     static class BerrfectFoods {
         public static final FoodProperties BLUEBERRY_JAM_BOTTLE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.1F).alwaysEat().build();
