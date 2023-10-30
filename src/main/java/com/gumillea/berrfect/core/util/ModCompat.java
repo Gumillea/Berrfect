@@ -11,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModCompat {
     public static final String AN = "ars_nouveau";
     public static final String B = "byg";
+    public static final String UG = "undergarden";
 
     //Resource Locations
     public static Item BLUEBERRIES = ForgeRegistries.ITEMS.getValue(new ResourceLocation(B, "blueberries"));

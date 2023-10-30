@@ -1,5 +1,5 @@
 {
-  "type": "berrfect:add_pips_item",
+  "type": "berrfect:add_an_pips_item",
   "item": "berrfect:sourceberry_pips",
   "conditions": [
     {

@@ -1,5 +1,5 @@
 {
-  "type": "berrfect:add_pips_item",
+  "type": "berrfect:add_byg_pips_item",
   "item": "berrfect:nightshade_berry_pips",
   "conditions": [
     {
