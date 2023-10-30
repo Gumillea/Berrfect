@@ -2,15 +2,15 @@ package com.gumillea.berrfect.core.reg;
 
 import com.gumillea.berrfect.Berrfect;
 import com.gumillea.berrfect.common.item.BerrfectDrinkItem;
-import com.gumillea.berrfect.common.item.BerrfectPipsItem;
+import com.gumillea.berrfect.common.item.SourceBerryPipsItem;
 import com.gumillea.berrfect.common.item.BlueberryJamRollItem;
 import com.gumillea.berrfect.core.util.ModCompat;
+import com.teamabnormals.berry_good.common.item.BerryPipsBlockItem;
 import com.teamabnormals.blueprint.core.util.registry.ItemSubRegistryHelper;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BowlFoodItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.fml.common.Mod;
@@ -20,11 +20,12 @@ import net.minecraftforge.registries.RegistryObject;
 public class BerrfectItems {
     public static final ItemSubRegistryHelper HELPER = Berrfect.REGISTRY_HELPER.getItemSubHelper();
 
-    public static final RegistryObject<Item> BLUEBERRY_PIPS = HELPER.createItem("blueberry_pips", () -> new BerrfectPipsItem(ModCompat.BLUEBERRIES_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
-    public static final RegistryObject<Item> BLISTERBERRY_PIPS = HELPER.createItem("blisterberry_pips", () -> new BerrfectPipsItem(ModCompat.BLISTERBERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
-    public static final RegistryObject<Item> CRIMSON_BERRY_PIPS = HELPER.createItem("crimson_berry_pips", () -> new BerrfectPipsItem(ModCompat.CRIMSON_BERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
-    public static final RegistryObject<Item> NIGHTSHADE_BERRY_PIPS = HELPER.createItem("nightshade_berry_pips", () -> new BerrfectPipsItem(ModCompat.NIGHTSHADE_BERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
-    public static final RegistryObject<Item> SOURCEBERRY_PIPS = HELPER.createItem("sourceberry_pips", () -> new BerrfectPipsItem(ModCompat.SOURCEBERRY_BUSH, new Item.Properties().tab(ModCompat.AN_PIPS)));
+    public static final RegistryObject<Item> BLUEBERRY_PIPS = HELPER.createItem("blueberry_pips", () -> new BerryPipsBlockItem(ModCompat.BLUEBERRIES_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
+    public static final RegistryObject<Item> BLISTERBERRY_PIPS = HELPER.createItem("blisterberry_pips", () -> new BerryPipsBlockItem(ModCompat.BLISTERBERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
+    public static final RegistryObject<Item> CRIMSON_BERRY_PIPS = HELPER.createItem("crimson_berry_pips", () -> new BerryPipsBlockItem(ModCompat.CRIMSON_BERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
+    public static final RegistryObject<Item> DROOPFRUIT_PIPS = HELPER.createItem("droopfruit_pips", () -> new BerryPipsBlockItem(ModCompat.DROOPVINE, new Item.Properties().tab(ModCompat.BYG_ITEM)));
+    public static final RegistryObject<Item> NIGHTSHADE_BERRY_PIPS = HELPER.createItem("nightshade_berry_pips", () -> new BerryPipsBlockItem(ModCompat.NIGHTSHADE_BERRY_BUSH, new Item.Properties().tab(ModCompat.BYG_ITEM)));
+    public static final RegistryObject<Item> SOURCEBERRY_PIPS = HELPER.createItem("sourceberry_pips", () -> new SourceBerryPipsItem(ModCompat.SOURCEBERRY_BUSH, new Item.Properties().tab(ModCompat.AN_PIPS)));
     public static final RegistryObject<Item> BLUEBERRY_JAM_BOTTLE = HELPER.createItem("blueberry_jam_bottle", () -> new BerrfectDrinkItem(new Item.Properties().food(BerrfectFoods.BLUEBERRY_JAM_BOTTLE).stacksTo(16).craftRemainder(Items.GLASS_BOTTLE).tab(ModCompat.BYG_MISC)));
     public static final RegistryObject<Item> BLUEBERRY_JAM_ROLL = HELPER.createItem("blueberry_jam_roll", () -> new BlueberryJamRollItem(new Item.Properties().food(BerrfectFoods.BLUEBERRY_JAM_ROLL).tab(ModCompat.BYG_MISC)));
     public static final RegistryObject<Item> EMBUR_PUDDING = HELPER.createItem("embur_pudding", () -> new BowlFoodItem(new Item.Properties().food(BerrfectFoods.EMBUR_PUDDING).stacksTo(1).tab(ModCompat.BYG_MISC)));

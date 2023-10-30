@@ -16,11 +16,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-public class BerrfectPipsItem extends Item {
+public class SourceBerryPipsItem extends Item {
 
     private final Block bush;
 
-    public BerrfectPipsItem(Block block, Properties properties) {
+    public SourceBerryPipsItem(Block block, Properties properties) {
         super(properties);
         this.bush = block;
     }

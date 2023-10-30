@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.ForgeRegistries;
 import potionstudios.byg.common.item.BYGCreativeTab;
+import quek.undergarden.registry.UGBlocks;
 
 public class ModCompat {
     public static final String AN = "ars_nouveau";
@@ -23,7 +24,9 @@ public class ModCompat {
     public static Block BLUEBERRIES_BUSH = ModList.get().isLoaded(ModCompat.B) ? ForgeRegistries.BLOCKS.getValue(new ResourceLocation(B, "blueberry_bush")) : Blocks.SWEET_BERRY_BUSH;
     public static Block BLISTERBERRY_BUSH = ModList.get().isLoaded(ModCompat.UG) ? ForgeRegistries.BLOCKS.getValue(new ResourceLocation(UG, "blisterberry_bush")) : Blocks.SWEET_BERRY_BUSH;
     public static Block CRIMSON_BERRY_BUSH = ModList.get().isLoaded(ModCompat.B) ? ForgeRegistries.BLOCKS.getValue(new ResourceLocation(B, "crimson_berry_bush")) : Blocks.SWEET_BERRY_BUSH;
+    public static Block DROOPVINE = ModList.get().isLoaded(ModCompat.B) ? UGBlocks.DROOPVINE.get() : Blocks.CAVE_VINES ;
     public static Block NIGHTSHADE_BERRY_BUSH = ModList.get().isLoaded(ModCompat.B) ? ForgeRegistries.BLOCKS.getValue(new ResourceLocation(B, "nightshade_berry_bush")) : Blocks.SWEET_BERRY_BUSH;
+    public static Item SOURCE_BERRY = ForgeRegistries.ITEMS.getValue(new ResourceLocation(AN, "source_berry"));
     public static Block SOURCEBERRY_BUSH = ModList.get().isLoaded(ModCompat.AN) ? ForgeRegistries.BLOCKS.getValue(new ResourceLocation(AN, "sourceberry_bush")) : Blocks.SWEET_BERRY_BUSH;
 
     //Tabs
