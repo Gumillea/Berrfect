@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "berrfect:item/rotten_blisterberry_pie"
+  }
+}

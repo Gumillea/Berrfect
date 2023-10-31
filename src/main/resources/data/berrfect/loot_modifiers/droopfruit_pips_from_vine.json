@@ -1,0 +1,10 @@
+{
+  "type": "berrfect:add_ug_pips_item",
+  "item": "berrfect:droopfruit_pips",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "undergarden:droopvine"
+    }
+  ]
+}

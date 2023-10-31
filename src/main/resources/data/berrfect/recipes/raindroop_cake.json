@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "undergarden:droopvine_item"
+        },
+        {
+          "type": "berrfect:config",
+          "value": "enable_undergarden_modification"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "undergarden:droopvine_item"
+    },
+    {
+      "item": "undergarden:droopvine_item"
+    },
+    {
+      "item": "undergarden:underbeans"
+    },
+    {
+      "item": "undergarden:glitterkelp"
+    }
+  ],
+  "result": {
+    "item": "berrfect:raindroop_cake",
+    "count": 2
+  }
+}

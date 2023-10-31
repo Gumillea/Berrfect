@@ -18,14 +18,14 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
-public class BYGPipsItemModifier extends LootModifier {
-    public static final Supplier<Codec<BYGPipsItemModifier>> CODEC = Suppliers.memoize(()
+public class UGPipsItemModifier extends LootModifier {
+    public static final Supplier<Codec<UGPipsItemModifier>> CODEC = Suppliers.memoize(()
             -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-            .fieldOf("item").forGetter(m -> m.item)).apply(inst, BYGPipsItemModifier::new)));
+            .fieldOf("item").forGetter(m -> m.item)).apply(inst, UGPipsItemModifier::new)));
 
     public final Item item;
 
-    protected BYGPipsItemModifier(LootItemCondition[] conditionsIn, Item item) {
+    protected UGPipsItemModifier(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
@@ -34,7 +34,7 @@ public class BYGPipsItemModifier extends LootModifier {
     @NotNull
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
 
-        if (ModList.get().isLoaded("byg") && BerrfectConfig.Common.BYG_MODIFICATION.get()) {
+        if (ModList.get().isLoaded(ModCompat.UG) && BerrfectConfig.Common.UG_MODIFICATION.get()) {
             generatedLoot.add(new ItemStack(item));
         }
 

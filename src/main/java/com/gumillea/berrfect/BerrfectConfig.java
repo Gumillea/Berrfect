@@ -20,11 +20,14 @@ public class BerrfectConfig {
         public static ForgeConfigSpec.BooleanValue AN_MODIFICATION;
         @ConfigKey("enable_byg_modification")
         public static ForgeConfigSpec.BooleanValue BYG_MODIFICATION;
+        @ConfigKey("enable_undergarden_modification")
+        public static ForgeConfigSpec.BooleanValue UG_MODIFICATION;
 
         Common(ForgeConfigSpec.Builder builder) {
             builder.push("Modifications");
             AN_MODIFICATION = builder.comment("Whether to enable the berry modifications for Ars Nouveau.").define("Ars Nouveau modification", true);
             BYG_MODIFICATION = builder.comment("Whether to enable the berry modifications for Oh The Biomes You'll Go.").define("BYG modification", true);
+            UG_MODIFICATION = builder.comment("Whether to enable the berry modifications for Undergarden.").define("Undergarden modification", true);
         }
     }
 

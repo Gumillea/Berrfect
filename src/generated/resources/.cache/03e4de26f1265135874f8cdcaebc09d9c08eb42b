@@ -1,5 +1,5 @@
-// 1.19.2	2023-10-26T20:34:37.2983258	Tags for minecraft:item
-03b92343fdf07e7727435dae38fb9b3e7c3d50fc data/blueprint/tags/items/chicken_food.json
-9f8672c3a126ae8f68bb45b18027b733dd16efa3 data/forge/tags/items/fruits/blueberries.json
+// 1.19.2	2023-10-31T18:57:55.5400886	Tags for minecraft:item
+0561a45c1dd934f1e93f1fb2240f157589fa927b data/blueprint/tags/items/chicken_food.json
+828ad79e1cc31a93406077c6ba0f6874f7318b02 data/forge/tags/items/fruits/blueberries.json
 a702678f4f786b104795d7b60cbe67d195a5e4eb data/forge/tags/items/jam.json
-03b92343fdf07e7727435dae38fb9b3e7c3d50fc data/forge/tags/items/seeds.json
+0561a45c1dd934f1e93f1fb2240f157589fa927b data/forge/tags/items/seeds.json

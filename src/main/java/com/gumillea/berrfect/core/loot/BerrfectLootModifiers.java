@@ -16,7 +16,8 @@ public class BerrfectLootModifiers {
 
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_BYG_PIPS_ITEM =
             ModList.get().isLoaded(ModCompat.B) ? LOOT_MODIFIER_SERIALIZERS.register("add_byg_pips_item", BYGPipsItemModifier.CODEC) : null;
-
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_AN_PIPS_ITEM =
             ModList.get().isLoaded(ModCompat.AN) ? LOOT_MODIFIER_SERIALIZERS.register("add_an_pips_item", ANPipsItemModifier.CODEC) : null;
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_UG_PIPS_ITEM =
+            ModList.get().isLoaded(ModCompat.UG) ? LOOT_MODIFIER_SERIALIZERS.register("add_ug_pips_item", UGPipsItemModifier.CODEC) : null;
 }

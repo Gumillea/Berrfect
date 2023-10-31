@@ -2,7 +2,9 @@
   "replace": false,
   "entries": [
     "berrfect:blueberry_pips_from_bush",
+    "berrfect:blisterberry_pips_from_bush",
     "berrfect:crimson_berry_pips_from_bush",
+    "berrfect:droopfruit_pips_from_vine",
     "berrfect:nightshade_berry_pips_from_bush",
     "berrfect:sourceberry_pips_from_bush"
   ]

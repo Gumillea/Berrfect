@@ -2,6 +2,7 @@ package com.gumillea.berrfect.core.reg;
 
 import com.gumillea.berrfect.Berrfect;
 import com.gumillea.berrfect.common.block.BlueberryJamBlock;
+import com.gumillea.berrfect.core.util.ModCompat;
 import com.teamabnormals.blueprint.core.util.registry.BlockSubRegistryHelper;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Block;

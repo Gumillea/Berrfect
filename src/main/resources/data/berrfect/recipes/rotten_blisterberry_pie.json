@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "undergarden:rotten_blisterberry"
+        },
+        {
+          "type": "berrfect:config",
+          "value": "enable_undergarden_modification"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "undergarden:rotten_blisterberry"
+    },
+    {
+      "item": "undergarden:rotten_blisterberry"
+    },
+    {
+      "tag": "undergarden:mushrooms"
+    },
+    {
+      "item": "undergarden:glitterkelp"
+    }
+  ],
+  "result": {
+    "item": "berrfect:rotten_blisterberry_pie"
+  }
+}

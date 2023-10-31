@@ -17,22 +17,26 @@ public class BerrfectItemTagsProvider extends ItemTagsProvider {
     }
     @Override
     public void addTags() {
-
         this.tag(BlueprintItemTags.CHICKEN_FOOD).add(
                 BerrfectItems.BLUEBERRY_PIPS.get(),
+                BerrfectItems.BLISTERBERRY_PIPS.get(),
                 BerrfectItems.CRIMSON_BERRY_PIPS.get(),
+                BerrfectItems.DROOPFRUIT_PIPS.get(),
                 BerrfectItems.NIGHTSHADE_BERRY_PIPS.get(),
                 BerrfectItems.SOURCEBERRY_PIPS.get()
         );
-        this.tag(BerrfectItemTags.FRUITS_BLUEBERRY).addOptional(
-                new ResourceLocation("byg", "blueberries")
+        this.tag(BerrfectItemTags.FRUITS_BLUEBERRY)
+                .addOptional(new ResourceLocation("byg", "blueberries"))
+                .addOptional(new ResourceLocation("aether", "blue_berry")
         );
         this.tag(BerrfectItemTags.JAM).add(
                 BerrfectItems.BLUEBERRY_JAM_BOTTLE.get()
         );
         this.tag(Tags.Items.SEEDS).add(
                 BerrfectItems.BLUEBERRY_PIPS.get(),
+                BerrfectItems.BLISTERBERRY_PIPS.get(),
                 BerrfectItems.CRIMSON_BERRY_PIPS.get(),
+                BerrfectItems.DROOPFRUIT_PIPS.get(),
                 BerrfectItems.NIGHTSHADE_BERRY_PIPS.get(),
                 BerrfectItems.SOURCEBERRY_PIPS.get()
         );

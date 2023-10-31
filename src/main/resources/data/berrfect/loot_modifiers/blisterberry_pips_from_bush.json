@@ -1,0 +1,10 @@
+{
+  "type": "berrfect:add_ug_pips_item",
+  "item": "berrfect:blisterberry_pips",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "undergarden:blisterberry_bush"
+    }
+  ]
+}

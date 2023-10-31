@@ -1,6 +1,7 @@
 package com.gumillea.berrfect.core.loot;
 
 import com.google.common.base.Suppliers;
+import com.gumillea.berrfect.BerrfectConfig;
 import com.gumillea.berrfect.core.util.ModCompat;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -33,7 +34,7 @@ public class ANPipsItemModifier extends LootModifier {
     @NotNull
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
 
-        if (ModList.get().isLoaded(ModCompat.AN)) {
+        if (ModList.get().isLoaded(ModCompat.AN) && BerrfectConfig.Common.AN_MODIFICATION.get()) {
             generatedLoot.add(new ItemStack(item));
         }
 

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "undergarden:blisterberry"
+        },
+        {
+          "type": "berrfect:config",
+          "value": "enable_undergarden_modification"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "undergarden:blisterberry"
+    }
+  ],
+  "result": {
+    "item": "berrfect:blisterberry_pips"
+  }
+}
